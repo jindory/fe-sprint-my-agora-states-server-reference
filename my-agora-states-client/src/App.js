@@ -4,10 +4,19 @@ import { useEffect, useState } from "react";
 function App() {
   const domain = "http://localhost:3001";
   const [discussions, setDiscussions] = useState([]);
+  const [test, setTest] = useState();
 
   useEffect(() => {
     getDiscussion();
   }, []);
+
+  const detectNetwork = (cardNumber) => {
+    const dinerRegex = /^3[89]\d{12}/;
+    if (dinerRegex.test(cardNumber)) {
+      console.log(`Diner's Club`);
+      setTest(`Diner's Club`);
+    }
+  }
 
   const getDiscussion = () => {
     return fetch(domain + "/discussions")

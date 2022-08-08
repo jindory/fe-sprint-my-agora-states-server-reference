@@ -31,7 +31,7 @@ module.exports.agoraStatesDiscussions = [
     createdAt: "2022-05-15T23:57:43Z",
     updatedAt: "2022-05-15T23:57:43Z",
     title:
-      "반복되는 문자 리턴 문제에서 ' '(공백하나인 문자열)입력시 오류가 발생합니다.",
+      "문자 리턴 문제에서 ' '(공백하나인 문자열)입력시 오류가 발생합니다.",
     url: "https://github.com/codestates-seb/agora-states-fe/discussions/44",
     author: "JoeunNAL",
     answer: null,
